@@ -9,7 +9,7 @@ function init() {
     fetch("https://docs.google.com/spreadsheets/d/197eMUvGBcyx78Duj0NMHoui0O2zHF-4mBNRz0nL6tSc/edit?usp=sharing")
     .then(response => response.json())
     .then(response => showData(response))
-    .catch(error => console.error("Error: "+error));
+    //.catch(error => console.error("Error: "+error));
 }
 
 function showData() {
