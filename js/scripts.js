@@ -29,7 +29,7 @@ function init() {
             console.log(rep)
  
             const colz = [];
-            const tr = document.createElement('tr');
+            const tr = document.createElement('p');
             //Extract column labels
             jsonData.table.cols.forEach((heading) => {
                 if (heading.label) {
