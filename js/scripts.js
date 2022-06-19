@@ -63,7 +63,7 @@ function processRows(json) {
         keys.forEach((key) => {
             const td = document.createElement('img');
             td.src = textContent;
-            //td.textContent = row[key];
+            td.textContent = row[key];
             tr.appendChild(td);
          
             
