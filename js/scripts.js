@@ -61,9 +61,12 @@ function processRows(json) {
         const keys = Object.keys(row);
      
         keys.forEach((key) => {
-            const td = document.createElement('p');
+            const td = document.createElement('img');
+            td.src=textContent;
             td.textContent = row[key];
             tr.appendChild(td);
+         
+            
         })
         output.appendChild(tr);
     })
