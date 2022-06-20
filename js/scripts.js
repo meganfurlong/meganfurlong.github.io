@@ -50,6 +50,11 @@ function init() {
                 })
                 data.push(row);
             })
+             if (heading.label="Image") {
+               const img = document.createElement("img");
+               img.src= "images/0*2mbSEijV9MPF6UBu.jpg";
+               document.body.appendChild(img);
+            }
             processRows(data);
         })
 }
@@ -65,14 +70,11 @@ function processRows(json) {
             td.textContent = row[key];
             tr.appendChild(td);
          
-            if (heading.label="Image") {
-               const img = document.createElement("img");
-               img.src= "images/0*2mbSEijV9MPF6UBu.jpg";
-               document.body.appendChild(img);
-            }
+         
          
             
         })
+
         output.appendChild(tr);
     })
 }
