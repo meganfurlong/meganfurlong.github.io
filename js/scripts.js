@@ -29,13 +29,13 @@ function init() {
             console.log(rep)
  
             const colz = [];
-            const tr = document.createElement('tr');
+            const tr = document.createElement('p');
             //Extract column labels
             jsonData.table.cols.forEach((heading) => {
                 if (heading.label) {
                     let column = heading.label;
                     colz.push(column);
-                    const th = document.createElement('th');
+                    const th = document.createElement('p');
                     th.innerText = column;
                     tr.appendChild(th);
                 }
@@ -57,11 +57,11 @@ function init() {
 function processRows(json) {
     json.forEach((row) => {
  
-        const tr = document.createElement('tr');
+        const tr = document.createElement('p');
         const keys = Object.keys(row);
      
         keys.forEach((key) => {
-            const td = document.createElement('td');
+            const td = document.createElement('p');
             td.textContent = row[key];
             tr.appendChild(td);
          
